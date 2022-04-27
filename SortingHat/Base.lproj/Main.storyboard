@@ -285,11 +285,11 @@
             </objects>
             <point key="canvasLocation" x="49" y="463"/>
         </scene>
-        <!--Sorint-->
+        <!--Navigation Controller-->
         <scene sceneID="KYR-zt-2ZW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hqv-F1-xKA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sorint" id="6M1-AC-guF"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="6M1-AC-guF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zLA-He-h8J">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -304,11 +304,11 @@
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="110.49107142857143"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="9qb-aD-eRg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7iz-e1-yu0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pYu-MK-1Gk"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="pYu-MK-1Gk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h8l-oA-lKL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

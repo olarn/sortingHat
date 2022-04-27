@@ -35,6 +35,7 @@ class Hogwarts {
         var houseStillRemains = true
 
         repeat {
+            //TODO: Need to change the better house selection.
             if let house = allHouses.randomElement()?.key {
                 if allHouses[house]! < maxStudent {
                     return house
