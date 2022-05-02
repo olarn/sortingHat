@@ -23,6 +23,22 @@ class SortingViewController: UIViewController {
     @IBAction func onScreenTapped(_ sender: Any) {
         nameTextField.resignFirstResponder()
     }
+}
+
+//MARK: - Handle when user Press Go button
+
+extension SortingViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTextField.resignFirstResponder()
+        performSortingHat(for: nameTextField.text ?? "")
+        return true
+    }
+}
+
+//MARK: - Helper (private) functions
+
+extension SortingViewController {
     
     private func performSortingHat(for name: String) {
         let houseName = Hogwarts.sortFor(name)
@@ -49,14 +65,6 @@ class SortingViewController: UIViewController {
                 }
             }
         }
-    }
-}
-
-extension SortingViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        nameTextField.resignFirstResponder()
-        performSortingHat(for: nameTextField.text ?? "")
-        return true
     }
 }
 

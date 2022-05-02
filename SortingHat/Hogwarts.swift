@@ -15,7 +15,7 @@ enum House: String {
 }
 
 class Hogwarts {
-    static var maxStudent = 3
+    static var maxStudentInEachHouse = 13
     
     static var houses: [House: Int] = [
         .griffendor: 0,
@@ -37,7 +37,7 @@ class Hogwarts {
         repeat {
             //TODO: Need to change the better house selection.
             if let house = allHouses.randomElement()?.key {
-                if allHouses[house]! < maxStudent {
+                if allHouses[house]! < maxStudentInEachHouse {
                     return house
                 } else {
                     allHouses.removeValue(forKey: house)
